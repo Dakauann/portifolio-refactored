@@ -33,18 +33,25 @@ export default function NavBar() {
 			className={`flex h-10 items-center p-2 py-4 duration-300 transition-all sticky top-0 z-[999] ${
 				isOnPageTop ? 'backdrop-blur-none' : 'backdrop-blur-xl'
 			}`}>
-			<Link href={'/'}>
-				<Button variant={'outline'} className='gap-1'>
-					DAKAUANN<sup className='text-primary'>.dev</sup>
-				</Button>
-			</Link>
+			<Button
+				variant={'outline'}
+				className='gap-1'
+				onClick={() => {
+					router.push('/')
+				}}>
+				DAKAUANN<sup className='text-primary'>.dev</sup>
+			</Button>
 
 			<div className='ml-auto'>
-				<Link href={'/projects'}>
-					<Button variant={'link'} className='text-'>
-						Projects
-					</Button>
-				</Link>
+				<Button
+					variant={'link'}
+					className='text-'
+					onClick={() => {
+						router.push('/about')
+					}}>
+					Projects
+				</Button>
+
 				<DropdownMenu>
 					<DropdownMenuTrigger asChild>
 						<Button variant={'secondary'}>
@@ -66,11 +73,13 @@ export default function NavBar() {
 							<Download size={15} />
 							Download curriculum
 						</DropdownMenuItem>
-						<Link href={'/curriculum'}>
-							<DropdownMenuItem className='gap-2'>
-								<Eye size={15} /> View curriculum
-							</DropdownMenuItem>
-						</Link>
+						<DropdownMenuItem
+							className='gap-2'
+							onClick={() => {
+								router.push('/curriculum')
+							}}>
+							<Eye size={15} /> View curriculum
+						</DropdownMenuItem>
 					</DropdownMenuContent>
 				</DropdownMenu>
 			</div>
