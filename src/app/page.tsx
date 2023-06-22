@@ -6,9 +6,11 @@ import {
 	Brush,
 	Code,
 	Cog,
+	Github,
 	Link,
 	LucideArrowBigDown,
 	LucideArrowDown,
+	Mail,
 	MoveDown,
 	ScreenShare,
 	Scroll,
@@ -20,7 +22,7 @@ export default function Home() {
 	return (
 		<main className='h-no-nav flex flex-col p-1 py-2'>
 			<header className='mx-auto m-auto h-no-nav flex flex-col justify-center items-center'>
-				<div className='border-b-muted-foreground border-b-2 m-auto'>
+				<div className='border-b-muted-foreground border-b-2 m-auto flex flex-col justify-center items-center'>
 					<h1 className='text-center text-4xl md:text-5xl lg:text-6xl font-bold'>
 						Dakauann Cavalcante
 					</h1>
@@ -28,6 +30,30 @@ export default function Home() {
 						<span className='text-primary'>Full Stack</span>{' '}
 						Developer
 					</h2>
+					<div className='gap-2 grid grid-flow-col'>
+						<Button
+							className='my-2 px-5 gap-2'
+							variant={'secondary'}
+							onClick={() => {
+								window.open(
+									'https://github.com/Dakauann',
+									'_blank',
+								)
+							}}>
+							<Github size={15} /> Github Profile
+						</Button>
+						<Button
+							className='my-2 px-5 gap-2'
+							variant={'default'}
+							onClick={() => {
+								window.open(
+									'https://github.com/Dakauann',
+									'_blank',
+								)
+							}}>
+							<Mail size={15} /> Contact me
+						</Button>
+					</div>
 				</div>
 				<div className='animate-bounce'>
 					<LucideArrowDown
@@ -129,10 +155,11 @@ export default function Home() {
 							<Cog size={25} /> Backend Development
 						</h3>
 						<p className='text-center text-md'>
-							As a backend developer i have built some backend
-							freelance projects such as not associated addons for
-							bet sites, movie searching interfaces, landing pages
-							and some other projects.
+							As a backend developer i have built automations
+							writen in go such as whatsapp automation bots using
+							not associated apis, api rests for frontend
+							applications using nestjs or nextjs api routes, and
+							some other projects.
 						</p>
 
 						<div>

@@ -15,6 +15,7 @@ import { useState } from 'react'
 
 export default function NavBar() {
 	const [isOnPageTop, setIsOnPageTop] = useState(true)
+	const router = useRouter()
 
 	if (typeof window !== 'undefined') {
 		console.log('oppaaa')
@@ -40,8 +41,13 @@ export default function NavBar() {
 
 			<div className='ml-auto'>
 				<Link href={'/systems'}>
-					<Button variant={'link'} className='text-'>
-						Systems
+					<Button
+						variant={'link'}
+						className='text-'
+						onClick={() => {
+							router.push('/projects')
+						}}>
+						Projects
 					</Button>
 				</Link>
 				<DropdownMenu>
@@ -53,11 +59,23 @@ export default function NavBar() {
 					<DropdownMenuContent>
 						<DropdownMenuLabel>Choose an option</DropdownMenuLabel>
 						<DropdownMenuSeparator />
-						<DropdownMenuItem className='gap-2'>
+						<DropdownMenuItem
+							className='gap-2'
+							onClick={() => {
+								// curriculum.docx
+								window.open(
+									'/documents/curriculum.docx',
+									'_blank',
+								)
+							}}>
 							<Download size={15} />
 							Download curriculum
 						</DropdownMenuItem>
-						<DropdownMenuItem className='gap-2'>
+						<DropdownMenuItem
+							className='gap-2'
+							onClick={() => {
+								router.push('/curriculum')
+							}}>
 							<Eye size={15} /> View curriculum
 						</DropdownMenuItem>
 					</DropdownMenuContent>
