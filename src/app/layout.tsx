@@ -1,4 +1,6 @@
 import NavBar from '@/layouts/navbar'
+import PageTransitionWrapper from '@/wrappers/page-transition-wrapper'
+import motion from 'framer-motion'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
@@ -27,7 +29,11 @@ export default function RootLayout({
 							<div className='absolute inset-0 -rotate-12 -skew-y-12 rounded-full bg-gradient-to-r from-gray-600 to-transparent anim-blob' />
 						</div>
 					</div>
-					<div className='relative z-10'>{children}</div>
+					<div className='relative z-10'>
+						<PageTransitionWrapper>
+							{children}
+						</PageTransitionWrapper>
+					</div>
 				</div>
 			</body>
 		</html>
