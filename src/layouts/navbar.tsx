@@ -41,9 +41,7 @@ export default function NavBar() {
 
 			<div className='ml-auto'>
 				<Link href={'/projects'}>
-					<Button
-						variant={'link'}
-						className='text-'>
+					<Button variant={'link'} className='text-'>
 						Projects
 					</Button>
 				</Link>
@@ -68,13 +66,11 @@ export default function NavBar() {
 							<Download size={15} />
 							Download curriculum
 						</DropdownMenuItem>
-						<DropdownMenuItem
-							className='gap-2'
-							onClick={() => {
-								router.push('/curriculum')
-							}}>
-							<Eye size={15} /> View curriculum
-						</DropdownMenuItem>
+						<Link href={'/curriculum'}>
+							<DropdownMenuItem className='gap-2'>
+								<Eye size={15} /> View curriculum
+							</DropdownMenuItem>
+						</Link>
 					</DropdownMenuContent>
 				</DropdownMenu>
 			</div>
