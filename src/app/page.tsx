@@ -7,7 +7,7 @@ import {
 	Code,
 	Cog,
 	Github,
-	Link,
+	Link2,
 	LucideArrowBigDown,
 	LucideArrowDown,
 	Mail,
@@ -16,6 +16,7 @@ import {
 	Scroll,
 } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { HTMLAttributes } from 'react'
 
 export default function Home() {
@@ -42,17 +43,20 @@ export default function Home() {
 							}}>
 							<Github size={15} /> Github Profile
 						</Button>
-						<Button
-							className='my-2 px-5 gap-2'
-							variant={'default'}
+						<Link
+							href={'#'}
 							onClick={() => {
 								window.open(
-									'https://github.com/Dakauann',
+									'mailto:dakauannc@gmail.com',
 									'_blank',
 								)
 							}}>
-							<Mail size={15} /> Contact me
-						</Button>
+							<Button
+								className='my-2 px-5 gap-2'
+								variant={'default'}>
+								<Mail size={15} /> Contact me
+							</Button>
+						</Link>
 					</div>
 				</div>
 				<div className='animate-bounce'>
@@ -90,7 +94,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Typescript <Link size={15} />
+									Typescript <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -101,7 +105,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									NextJS <Link size={15} />
+									NextJS <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -112,7 +116,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									React <Link size={15} />
+									React <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -123,7 +127,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Vue <Link size={15} />
+									Vue <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -134,7 +138,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Tailwind Css <Link size={15} />
+									Tailwind Css <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -145,7 +149,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									shadcn ui <Link size={15} />
+									shadcn ui <Link2 size={15} />
 								</Button>
 							</div>
 						</div>
@@ -177,7 +181,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Typescript <Link size={15} />
+									Typescript <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -185,7 +189,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Go <Link size={15} />
+									Go <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -196,7 +200,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Mongodb <Link size={15} />
+									Mongodb <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -207,7 +211,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Planetscale <Link size={15} />
+									Planetscale <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -218,7 +222,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Prismajs <Link size={15} />
+									Prismajs <Link2 size={15} />
 								</Button>
 								<Button
 									onClick={() => {
@@ -229,7 +233,7 @@ export default function Home() {
 									}}
 									variant={'secondary'}
 									className='gap-2 flex-auto'>
-									Nestjs <Link size={15} />
+									Nestjs <Link2 size={15} />
 								</Button>
 							</div>
 						</div>

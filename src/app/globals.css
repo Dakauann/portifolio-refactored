@@ -6,7 +6,7 @@
 	min-height: calc(100vh - 2.5rem);
 }
 
-/* change the scroll bar to a thinner one and more visible */	
+/* change the scroll bar to a thinner one and more visible */
 ::-webkit-scrollbar {
 	width: 5px;
 	height: 5px;
@@ -26,45 +26,53 @@
 }
 
 @keyframes blob {
-  0% {
-    border-radius: 94% 31% 30% 67% / 67% 37% 56% 34%;
-  }
-  10% {
-    border-radius: 31% 94% 67% 30% / 37% 67% 34% 56%;
-  }
-  20% {
-    border-radius: 67% 30% 94% 31% / 34% 56% 37% 67%;
-  }
-  30% {
-    border-radius: 94% 67% 31% 30% / 56% 34% 67% 37%;
-  }
-  40% {
-    border-radius: 30% 31% 67% 94% / 67% 37% 56% 34%;
-  }
-  50% {
-    border-radius: 31% 67% 30% 94% / 37% 56% 34% 67%;
-  }
-  60% {
-    border-radius: 67% 30% 31% 94% / 56% 34% 67% 37%;
-  }
-  70% {
-    border-radius: 30% 94% 67% 31% / 34% 56% 37% 67%;
-  }
-  80% {
-    border-radius: 94% 67% 30% 31% / 56% 34% 67% 37%;
-  }
-  90% {
-    border-radius: 67% 31% 94% 30% / 37% 67% 34% 56%;
-  }
-  100% {
-    border-radius: 94% 31% 30% 67% / 67% 37% 56% 34%;
-  }
+	0% {
+		border-radius: 94% 31% 30% 67% / 67% 37% 56% 34%;
+	}
+	10% {
+		border-radius: 31% 94% 67% 30% / 37% 67% 34% 56%;
+		background-color: red;
+	}
+	20% {
+		border-radius: 67% 30% 94% 31% / 34% 56% 37% 67%;
+	}
+	30% {
+		border-radius: 94% 67% 31% 30% / 56% 34% 67% 37%;
+		background-color: darkred;
+	}
+	40% {
+		border-radius: 30% 31% 67% 94% / 67% 37% 56% 34%;
+	}
+	50% {
+		border-radius: 31% 67% 30% 94% / 37% 56% 34% 67%;
+		background-color: firebrick;
+	}
+	60% {
+		border-radius: 67% 30% 31% 94% / 56% 34% 67% 37%;
+	}
+	70% {
+		border-radius: 30% 94% 67% 31% / 34% 56% 37% 67%;
+		background-color: darkred;
+	}
+	80% {
+		border-radius: 94% 67% 30% 31% / 56% 34% 67% 37%;
+	}
+	90% {
+		border-radius: 67% 31% 94% 30% / 37% 67% 34% 56%;
+		background-color: red;
+	}
+	100% {
+		border-radius: 94% 31% 30% 67% / 67% 37% 56% 34%;
+	}
 }
 
 .bg-dots {
-  background-image: radial-gradient(rgba(169, 169, 169, 0.319) 1px, transparent 0);
-  background-size: 3rem 3rem;
-  background-position: -19px -19px;
+	background-image: radial-gradient(
+		rgba(169, 169, 169, 0.319) 1px,
+		transparent 0
+	);
+	background-size: 3rem 3rem;
+	background-position: -19px -19px;
 }
 
 .anim-blob {

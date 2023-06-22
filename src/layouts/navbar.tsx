@@ -40,13 +40,10 @@ export default function NavBar() {
 			</Link>
 
 			<div className='ml-auto'>
-				<Link href={'/systems'}>
+				<Link href={'/projects'}>
 					<Button
 						variant={'link'}
-						className='text-'
-						onClick={() => {
-							router.push('/projects')
-						}}>
+						className='text-'>
 						Projects
 					</Button>
 				</Link>
