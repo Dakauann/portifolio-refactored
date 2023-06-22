@@ -110,6 +110,17 @@ export default function Home() {
 									className='gap-2 flex-auto'>
 									Tailwind Css <Link size={15} />
 								</Button>
+								<Button
+									onClick={() => {
+										window.open(
+											'https://ui.shadcn.com/',
+											'_blank',
+										)
+									}}
+									variant={'secondary'}
+									className='gap-2 flex-auto'>
+									shadcn ui <Link size={15} />
+								</Button>
 							</div>
 						</div>
 					</div>
