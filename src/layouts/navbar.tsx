@@ -47,7 +47,7 @@ export default function NavBar() {
 					variant={'link'}
 					className='text-'
 					onClick={() => {
-						router.push('/about')
+						router.push('/projects')
 					}}>
 					Projects
 				</Button>
