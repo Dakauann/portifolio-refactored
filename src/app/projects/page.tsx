@@ -77,10 +77,9 @@ export default function SystemsPage() {
 			</header>
 			<section className='grid gap-2 auto-rows-auto columns-3xs sm:grid-cols-3 mt-4'>
 				{projects.map((project, index) => {
-					const gradient = generateRandomGradient()
 					return (
 						<div
-							className={`p-2 px-4 py-5 rounded shadow-lg ${gradient} flex flex-col shadow-xl`}
+							className={`p-2 px-4 rounded shadow-lg ${generateRandomGradient()} flex flex-col shadow-xl`}
 							key={index}>
 							<h2 className='text-2xl font-bold'>
 								{project.name}

@@ -17,7 +17,7 @@ import {
 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { HTMLAttributes } from 'react'
+import { HTMLAttributes, useEffect } from 'react'
 
 export default function Home() {
 	return (
