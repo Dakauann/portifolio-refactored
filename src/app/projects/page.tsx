@@ -1,27 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Link2 } from 'lucide-react'
 import Link from 'next/link'
-
-function generateRandomGradient(): string {
-	const colors = [
-		['from-red-600', 'to-blue-600'],
-		['from-blue-600', 'to-green-600'],
-		['from-green-600', 'to-yellow-600'],
-		['from-yellow-600', 'to-purple-600'],
-		['from-purple-600', 'to-pink-600'],
-		['from-pink-600', 'to-indigo-600'],
-		['from-indigo-600', 'to-teal-600'],
-		['from-teal-600', 'to-lime-600'],
-		['from-slate-800', 'to-orange-600'],
-		['from-orange-600', 'to-red-600'],
-	]
-
-	// Randomly select a gradient
-	const randomIndex = Math.floor(Math.random() * colors.length)
-	const selectedGradient = colors[randomIndex]
-
-	return `bg-gradient-to-r ${selectedGradient[0]} ${selectedGradient[1]}`
-}
+import colors from 'tailwindcss/colors'
 
 export default function SystemsPage() {
 	const projects = [
@@ -73,13 +53,14 @@ export default function SystemsPage() {
 	return (
 		<main className='p-2'>
 			<header>
-				<h1 className='text-2xl font-bold'>My projects</h1>
+				<h1 className='text-2xl font-bold'>Something</h1>
 			</header>
+
 			<section className='grid gap-2 auto-rows-auto columns-3xs sm:grid-cols-3 mt-4'>
 				{projects.map((project, index) => {
 					return (
 						<div
-							className={`p-2 px-4 rounded shadow-lg ${generateRandomGradient()} flex flex-col shadow-xl`}
+							className={`p-2 px-4 rounded-lg flex flex-col shadow-xl backdrop-blur-xl border-l-primary border-l-2`}
 							key={index}>
 							<h2 className='text-2xl font-bold'>
 								{project.name}

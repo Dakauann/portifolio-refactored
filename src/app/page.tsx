@@ -68,19 +68,19 @@ export default function Home() {
 			</header>
 
 			<section className='bg-slate-800 rounded translate-y-8'>
-				<div className='w-[95vw] bg-secondary mx-auto rounded -translate-y-10 p-2 grid grid-cols-1 sm:grid-cols-2 gap-2'>
+				<div className='w-[95vw] bg- mx-auto rounded -translate-y-10 p-2 grid grid-cols-1 sm:grid-cols-2 gap-2'>
 					<div className='rounded p-2 transition-all duration-300 bg-gradient-to-br to-slate-800 via-black from-primary bg-size-200 bg-pos-0 hover:bg-pos-100 cursor-default'>
-						<h3 className='text-2xl flex gap-2 mb-5 font-bold items-center'>
+						<h3 className='text-2xl flex gap-2 mb-5 font-bold items-center text-white'>
 							<Brush size={25} /> Frontend Development
 						</h3>
-						<p className='text-center text-md'>
+						<p className='text-center text-md text-white'>
 							As a front-end developer i have built some frontend
 							freelance projects such as not associated addons for
 							bet sites, movie searching interfaces, landing pages
 							and some other projects.
 						</p>
 						<div>
-							<h1 className='text-xl font-bold mt-5 flex gap-2 items-center'>
+							<h1 className='text-xl font-bold mt-5 flex gap-2 items-center text-white'>
 								<Code size={20} /> Technologies i use
 							</h1>
 
@@ -155,10 +155,10 @@ export default function Home() {
 						</div>
 					</div>
 					<div className='rounded p-2 transition-all duration-300 bg-gradient-to-br to-slate-800 via-black from-blue-600 bg-size-200 bg-pos-0 hover:bg-pos-100 cursor-default'>
-						<h3 className='text-2xl flex gap-2 mb-5 font-bold'>
+						<h3 className='text-2xl flex gap-2 mb-5 font-bold text-white'>
 							<Cog size={25} /> Backend Development
 						</h3>
-						<p className='text-center text-md'>
+						<p className='text-center text-md text-white'>
 							As a backend developer i have built automations
 							writen in go such as whatsapp automation bots using
 							not associated apis, api rests for frontend
@@ -167,7 +167,7 @@ export default function Home() {
 						</p>
 
 						<div>
-							<h1 className='text-xl font-bold mt-5 flex gap-2 items-center'>
+							<h1 className='text-xl font-bold mt-5 flex gap-2 items-center text-white'>
 								<Code size={20} /> Technologies i use
 							</h1>
 

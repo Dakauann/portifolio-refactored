@@ -30,12 +30,12 @@ export default function TemplateRootPage({
 	}
 
 	return (
-		<motion.div
-			variants={animation}
-			initial='initial'
-			animate='animate'
-			exit='exit'>
+		// <motion.div
+		// 	variants={animation}
+		// 	initial='initial'
+		// 	animate='animate'
+		// 	exit='exit'>
 			{children}
-		</motion.div>
+		// </motion.div>
 	)
 }

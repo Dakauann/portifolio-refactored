@@ -31,35 +31,35 @@
 	}
 	10% {
 		border-radius: 31% 94% 67% 30% / 37% 67% 34% 56%;
-		background-color: red;
+		background-color: rgb(255, 0, 0);
 	}
 	20% {
 		border-radius: 67% 30% 94% 31% / 34% 56% 37% 67%;
 	}
 	30% {
 		border-radius: 94% 67% 31% 30% / 56% 34% 67% 37%;
-		background-color: darkred;
+		background-color: rgb(255, 23, 23);
 	}
 	40% {
 		border-radius: 30% 31% 67% 94% / 67% 37% 56% 34%;
 	}
 	50% {
 		border-radius: 31% 67% 30% 94% / 37% 56% 34% 67%;
-		background-color: firebrick;
+		background-color: rgb(255, 0, 0);
 	}
 	60% {
 		border-radius: 67% 30% 31% 94% / 56% 34% 67% 37%;
 	}
 	70% {
 		border-radius: 30% 94% 67% 31% / 34% 56% 37% 67%;
-		background-color: darkred;
+		background-color: rgb(170, 0, 0);
 	}
 	80% {
 		border-radius: 94% 67% 30% 31% / 56% 34% 67% 37%;
 	}
 	90% {
 		border-radius: 67% 31% 94% 30% / 37% 67% 34% 56%;
-		background-color: red;
+		background-color: rgb(255, 0, 0);
 	}
 	100% {
 		border-radius: 94% 31% 30% 67% / 67% 37% 56% 34%;

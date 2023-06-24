@@ -43,6 +43,11 @@ export default function NavBar() {
 			</Button>
 
 			<div className='ml-auto'>
+				<Button variant={"ghost"} className='items-center justify-center' onClick={() => {
+					document.body.classList.toggle('dark')
+				}}>
+					<Moon size={15}/>
+				</Button>
 				<Button
 					variant={'link'}
 					className='text-'
