@@ -53,7 +53,7 @@ export default function SystemsPage() {
 	return (
 		<main className='p-2'>
 			<header>
-				<h1 className='text-2xl font-bold'>Something</h1>
+				<h1 className='text-2xl font-bold'>Projects</h1>
 			</header>
 
 			<section className='grid gap-2 auto-rows-auto columns-3xs sm:grid-cols-3 mt-4'>
