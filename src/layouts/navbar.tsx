@@ -43,20 +43,6 @@ export default function NavBar() {
 			</Button>
 
 			<div className='ml-auto'>
-				<Button variant={"ghost"} className='items-center justify-center' onClick={() => {
-					document.body.classList.toggle('dark')
-				}}>
-					<Moon size={15}/>
-				</Button>
-				<Button
-					variant={'link'}
-					className='text-'
-					onClick={() => {
-						router.push('/projects')
-					}}>
-					Projects
-				</Button>
-
 				<DropdownMenu>
 					<DropdownMenuTrigger asChild>
 						<Button variant={'secondary'}>

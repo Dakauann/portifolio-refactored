@@ -15,6 +15,16 @@ module.exports = {
 			},
 		},
 		extend: {
+			dropShadow: {
+				glow: [
+					'0 0 0.5rem hsl(var(--primary))',
+					'0 0 1rem hsl(var(--primary))',
+					'0 0 2rem hsl(var(--primary))',
+					'0 0 4rem hsl(var(--primary))',
+					'0 0 8rem hsl(var(--primary))',
+					'0 0 16rem hsl(var(--primary))',
+				]
+			},
 			backgroundSize: {
                 'size-200': '200% 200%',
             },
