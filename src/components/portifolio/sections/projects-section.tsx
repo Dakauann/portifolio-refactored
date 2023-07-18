@@ -5,6 +5,21 @@ import Link from 'next/link'
 export default function ProjectsSection() {
 	const projects = [
 		{
+			name: 'd-commerce',
+			description: 'A e-commerce made to show my fullstack skills. (not finished yet)',
+			technologies: ['NextJS', 'React', 'Tailwind CSS', 'shadcn ui', 'prisma', 'planetscale'],
+			links: [
+				{
+					name: 'Github',
+					url: 'https://github.com/Dakauann/e-commerce',
+				},
+				{
+					name: 'Site',
+					url: 'https://d-commerce.vercel.app/',
+				},
+			],
+		},
+		{
 			name: 'DAKAUANN.dev',
 			description: 'My personal and professional website.',
 			technologies: ['NextJS', 'React', 'Tailwind CSS', 'shadcn ui'],
