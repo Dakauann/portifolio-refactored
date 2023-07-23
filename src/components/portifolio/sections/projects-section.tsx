@@ -5,9 +5,33 @@ import Link from 'next/link'
 export default function ProjectsSection() {
 	const projects = [
 		{
+			name: 'YouMovies',
+			description: 'A react native app to search movies and series.',
+			technologies: [
+				'React Native',
+				'Expo',
+				'Typescript',
+				'React Navigation',
+			],
+			links: [
+				{
+					name: 'Github',
+					url: 'https://github.com/Dakauann/react-native-movies-search-app',
+				},
+			],
+		},
+		{
 			name: 'd-commerce',
-			description: 'A e-commerce made to show my fullstack skills. (not finished yet)',
-			technologies: ['NextJS', 'React', 'Tailwind CSS', 'shadcn ui', 'prisma', 'planetscale'],
+			description:
+				'A e-commerce made to show my fullstack skills. (not finished yet)',
+			technologies: [
+				'NextJS',
+				'React',
+				'Tailwind CSS',
+				'shadcn ui',
+				'prisma',
+				'planetscale',
+			],
 			links: [
 				{
 					name: 'Github',
